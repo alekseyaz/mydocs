@@ -33,7 +33,7 @@ repo_url: https://github.com/squidfunk/mkdocs-material
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2020 Martin Donath
+copyright: Copyright &copy; 2019 - 2020 Aleksey Zemskov
 
 # Configuration
 theme:
@@ -54,9 +54,26 @@ theme:
     - navigation.tabs
     #- navigation.instant
   palette:
-    scheme: default
+    scheme: slate
     primary: indigo
     accent: indigo
+
+
+  # palette:
+  #   - scheme: default
+  #     primary: indigo
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/.icons/material/toggle-switch.svg
+  #       name: Switch to light mode
+  #   - scheme: slate
+  #     primary: blue
+  #     accent: blue
+  #     toggle:
+  #       icon: material/.icons/material/toggle-switch-off-outline.svg
+  #       name: Switch to dark mode
+
+
   font:
     text: Roboto
     code: Roboto Mono
@@ -121,7 +138,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      use_pygments: false
+      linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -192,3 +211,9 @@ nav:
 google_analytics:
   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
   - auto
+
+extra_javascript:
+  - assets/highlight/highlight.pack.js
+  - assets/highlight/config.js
+extra_css:
+  - assets/highlight/styles/vs2015.css
