@@ -20,10 +20,10 @@
 
 name: ci
 on:
-  - push
-    branches:
-      - dev
-  - pull_request
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
 
 # Environment
 env:
