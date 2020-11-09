@@ -57,8 +57,8 @@ jobs:
             mkdocs-redirects>=1.0
 
       # Build documentation
-      # - env:
-      #     GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+      - env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
           mkdocs gh-deploy --force
           mkdocs --version
