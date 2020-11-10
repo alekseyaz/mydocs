@@ -198,9 +198,13 @@ nav:
     - Meta tags: reference/meta-tags.md
     - Variables: reference/variables.md
   - SQL:
-    - Основы языка SQL: sql/basics/basics.md
-    - Дополнительные возможности SQL: sql/additional-features/inner-join.md
-    - Функции языка SQL: sql/functions/count.md
+    - Основы языка SQL:
+      - SELECT: sql/basics/select.md
+      - INSERT: sql/basics/insert.md
+    - Дополнительные возможности SQL:
+      - INNER JOIN: sql/additional-features/inner-join.md
+    - Функции языка SQL:
+      - COUNT: sql/functions/count.md
   - Changelog:
     - Release notes: changelog.md
     - Upgrading: upgrading.md
