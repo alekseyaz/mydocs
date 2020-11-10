@@ -19,17 +19,15 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_url: https://alekseyaz.github.io/mkdocs-material/
+site_name: Разные справочники и руководства
+site_url: https://alekseyaz.github.io/mydocs/
 site_author: Aleksey Zemskov
 site_description: >-
-  Create a branded static site from a set of Markdown files to host the
-  documentation of your Open Source or commercial project – customizable,
-  searchable, mobile-friendly, 40+ languages
+  Разные справочники и руководства
 
 # Repository
 repo_name: alekseyaz/mkdocs-material
-repo_url: https://github.com/alekseyaz/mkdocs-material
+repo_url: https://github.com/alekseyaz/mydocs
 edit_uri: ""
 
 # Copyright
@@ -98,7 +96,6 @@ plugins:
         releases/5.md: upgrading.md #upgrading-from-3x-to-4x
         releases/changelog.md: changelog.md
         setup/adding-social-links.md: setup/setting-up-the-footer.md
-        sponsorship.md: insiders.md
   - minify:
       minify_html: true
 
